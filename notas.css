@@ -1,0 +1,58 @@
+body{
+    background-color: darkblue;
+    width: 100%;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+#nota-detalle{
+    background-color: blue;
+    width: 90%;
+    width: 80%;  /* Ajusta el ancho según el diseño */
+    margin: 10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+#nota-texto{
+    color: black;
+    word-wrap: break-word;  /* Rompe palabras largas que no caben */
+    white-space: pre-line;  /* Mantiene los saltos de línea del texto */
+    max-height: 400px;      /* Ajusta la altura máxima si es necesario */
+    overflow-y: auto;       /* Agrega barra de desplazamiento vertical si el texto es muy largo */
+    line-height: 1.5;       /* Espaciado entre líneas para mejor legibilidad */
+    font-size: 16px;        /* Ajusta el tamaño de la fuente según sea necesario */
+    text-align: justify;
+}
+
+#fecha{
+    margin: 40px 0px;
+}
+
+#btn-regresar{
+    width: 150px;
+    height: 40px;
+    display: block;     /* Hace que el botón se comporte como un elemento de bloque */
+    margin: 0 auto;     /* Centra el botón horizontalmente */
+    border-radius: 10px;
+    border: hidden;
+    /* para aplicar el hover a la velocidad que desee */
+    transition-duration: 0.4s;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#btn-regresar:hover{
+    background-color: rgb(0, 0, 0, 1);
+    color: white;
+    width: 152px;
+    height: 43px;
+    font-size: 14px;
+}

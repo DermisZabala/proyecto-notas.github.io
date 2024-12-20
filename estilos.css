@@ -1,0 +1,186 @@
+body{
+    /* FONDO BLANCO SUAVE */
+    background-color: rgba(245, 245, 220, 0.5);
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#contenedor{
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cont-cabezera h1{
+    text-align: center;
+    font-size: 50px;
+    color: darkblue;
+}
+
+.control-notas{
+    display: block;
+    margin: 0 auto;
+    height: 750px;
+    background: rgba(37, 37, 123, 1);
+    border-radius: 2%;
+    width: 500px;
+}
+
+label,
+input,
+textarea
+{
+    margin-left: 20px;
+}
+
+.control-notas #label-titulo{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#titulo-nota{
+    display: block;
+    width: 450px;
+    height: 30px;
+    border-radius: 5px;
+    border: hidden;
+}
+
+#texto-nota{
+    display: block;
+    resize: none;
+    width: 452px;
+    height: 350px;
+    border-radius: 5px;
+    border: hidden;
+}
+
+#agg-nota,
+#buscar-btn
+{
+    width: 150px;
+    height: 40px;
+    display: block;     /* Hace que el botón se comporte como un elemento de bloque */
+    margin: 0 auto;     /* Centra el botón horizontalmente */
+    border-radius: 10px;
+    border: hidden;
+    /* para aplicar el hover a la velocidad que desee */
+    transition-duration: 0.4s;
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#agg-nota:hover, #buscar-btn:hover
+{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 152px;
+    height: 43px;
+    font-size: 14px;
+}
+
+#buscador-input{
+    display: block;
+    width: 450px;
+    height: 30px;
+    border-radius: 5px;
+    border: hidden;
+}
+
+label{
+    /* para hacer que el elemento en bloque */
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#lista-notas{
+    text-align: center;
+    color: black;
+}
+
+/* Estilo para las notas */
+.nota {
+    background-color: darkblue;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nota p {
+    white-space: nowrap;           /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;              /* Esconde el texto que exceda el ancho */
+    text-overflow: ellipsis;       /* Agrega los tres puntos (...) */
+    width: 100%;                   /* Asegura que el contenedor tenga un ancho determinado */
+}
+
+
+/* Estilo para los títulos de las notas */
+.nota h4 {
+    font-size: 18px;
+    color: white;
+}
+
+.nota a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo para los botones de eliminar */
+.nota .eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nota .eliminar:hover {
+    background-color: darkred;
+}
+
+/* diseno responsive */
+
+@media(max-width: 600px){
+    #cont-cabezera h1{
+        margin-top: 40px;
+        font-size: 45px;
+    }
+    .control-notas{
+        height: 700px;
+        border-radius: 2%;
+        width: 350px;
+    }
+    #titulo-nota,
+    #buscador-input
+    {
+        display: block;
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border: hidden;
+    }
+    #texto-nota
+    {
+        display: block;
+        resize: none;
+        width: 300px;
+        height: 350px;
+        border-radius: 5px;
+        border: hidden;
+    }
+    #agg-nota,
+    #buscar-btn
+    {
+        width: 150px;
+        height: 40px;
+    }
+}

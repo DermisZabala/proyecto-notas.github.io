@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <header id="cont-cabezera">
+            <h1>Notes</h1>
+        </header>
+        <div class="control-notas">
+            <label id="label-titulo" for="titulo">TITULO</label>
+            <input type="text" name="titulo" id="titulo-nota" placeholder="Escriba el titulo aqui">
+
+            <label for="texto">NOTA</label>
+            <textarea name="texto" id="texto-nota" placeholder="Escriba su nota aqui"></textarea>
+            <button id="agg-nota">GUARDAR NOTA</button>
+
+            <div class="buscar">
+                <label>BUSCAR</label>
+                <input type="text" id="buscador-input" placeholder="Buscar por título o texto">
+                <button id="buscar-btn">Buscar</button>
+            </div>
+            
+
+        </div>
+        <div id="lista-notas">
+            <h3>Notas agregadas</h3>
+        </div>
+    </div>
+</body>
+</html>
